@@ -1,8 +1,9 @@
 /**
  * Galleria Azur Theme
- *
+ * (vith vertical variant)
  *
  * Copyright (c) 2010 - 2019 worse is better UG
+ * 2020 sammik
  * Licensed under the MIT License.
  */
 
@@ -29,15 +30,15 @@
 
 Galleria.addTheme({
     name: 'azur',
-    version: 1.60,
-    author: 'Galleria',
+    version: 1.61,
+    author: 'sammik',
     css: 'galleria.azur.css',
     // begin site script
     defaults: {
         transition: 'fade',
         transitionSpeed: 500,
         imageCrop: true,
-        thumbCrop: 'height',
+        thumbCrop: true,
         idleMode: 'hover',
         idleSpeed: 500,
         fullscreenTransition: false,
@@ -60,7 +61,7 @@ Galleria.addTheme({
     },
     init: function(options) {
 
-        Galleria.requires( 1.6, 'This version of Azur theme requires Galleria version 1.6 or later');
+        Galleria.requires( 1.61, 'This version of Azur theme requires Galleria version 1.6.1 or later');
 
         // add some elements
         this.addElement('bar','fullscreen','play','progress').append({
@@ -114,7 +115,7 @@ Galleria.addTheme({
             $( canvas ).css({
                 zIndex: 10000,
                 position: 'absolute',
-                right:10,
+                right: ( options.carousel === 'vertical' ? 61 : 10 ),
                 top:10
             }).appendTo( gallery.get('container') );
 

@@ -1,8 +1,9 @@
 /**
  * Galleria Classic Theme
- *
+ * (with vertical variant)
  *
  * Copyright (c) 2010 - 2019 worse is better UG
+ * 2020 sammik
  * Licensed under the MIT License.
  */
 
@@ -28,19 +29,19 @@
 
     Galleria.addTheme({
         name: 'classic',
-        version: 1.6,
-        author: 'Galleria',
+        version: 1.61,
+        author: 'sammik',
         css: 'galleria.classic.css',
         defaults: {
             transition: 'slide',
-            thumbCrop:  'height',
+            thumbCrop:  true,
 
             // set this to false if you want to show the caption all the time:
             _toggleInfo: true
         },
         init: function(options) {
 
-            Galleria.requires(1.4, 'This version of Classic theme requires Galleria 1.4 or later');
+            Galleria.requires(1.61, 'This version of Classic theme requires Galleria 1.6.1 or later');
 
             // add some elements
             this.addElement('info-link','info-close');
