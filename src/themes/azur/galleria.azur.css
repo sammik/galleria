@@ -173,6 +173,11 @@
 .galleria-theme-azur.vertical .galleria-thumbnails {
     float: none;
 }
+.galleria-theme-azur.vertical .galleria-thumbnails-container:not(.galleria-carousel) .galleria-thumbnails {
+    position: absolute!important;
+    bottom: 0;
+    top:auto!important;
+}
 .galleria-theme-azur .galleria-thumbnails .galleria-image {
     width: 47px;
     height: 27px;
