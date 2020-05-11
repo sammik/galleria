@@ -1372,7 +1372,7 @@ Galleria = function() {
             carousel.size = vertical ? self.$( 'thumbnails-list' ).height() : self.$( 'thumbnails-list' ).width();
 
             // when carousel goes inactive, set default position (if it is not set already)
-            if ( w <= carousel.width && carousel.current ){
+            if ( wh <= carousel.size && carousel.current ){
                 carousel.set(0);
             }
         },
