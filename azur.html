@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.3">
+        <title>Galleria Azur Theme</title>
+        <style>
+
+            /* Demo styles */
+            html,body{background:#eee;margin:0;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;max-width:620px;margin:70px auto;}
+            h1, h2{font-size:14px;color:#222;margin:0;margin-bottom:-30px;}
+            h2{margin:40px 0 0;}
+            p{margin:0 0 10px;}
+            a {color:#22BCB9;text-decoration:none;}
+            .galleria-info-description a { color: #bbb;}
+            .cred{margin-top:20px;font-size:11px;}
+            #data {display: none;}
+            
+            nav{margin:0;position:fixed;top:0;left:0;right:0;background:black;text-decoration:none;list-style:none;padding:4px;text-align:center;z-index:9999}
+            footer{background:black;padding:4px;z-index:9999;position:fixed;bottom:0;right:0;left:0;}
+            nav a, footer a{display:inline-block;margin:0;padding:10px;height:18px;background:#eee;color:#222;}
+            nav a:hover, footer a:hover, nav a.active{background:#fff;color:black;}
+            footer a:hover{text-decoration:underline;}
+            pre{padding:4px;border:1px inset white;}
+            
+            /* Gallery measures that will be applied */
+            #galleria1, #galleria2, #galleria3, #galleria4 {
+                height:420px;    /* defines a static gallery height */
+                max-width:620px; /* defines a responsive width */
+            }
+
+        </style>
+
+        <!-- load jQuery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="galleria.js"></script>
+
+    </head>
+<body>
+    <nav>
+        <a href="#gallery1">Vertical carousel</a>
+        <a href="#gallery2">Default setup</a>
+        <a href="#gallery3">Light version</a>
+        <a href="#gallery4">Vertical light</a>
+    </nav>
+    
+    <div class="content">
+        <h1>Galleria Azur Theme 1.6.1</h1>
+        
+        <h2 id="gallery1">Vertical carousel</h2>
+        <p>Dark version, vertical carousel, cropped thumbnails.</p>
+        <div id="galleria1"></div>
+<pre><code>Galleria.run('.galleria', {
+    carousel: 'vertical'
+});</code></pre>
+        
+        <h2 id="gallery2">Default setup</h2>
+        <p>Horizontal carousel, dark.</p>
+        <div id="galleria2"></div>
+<pre><code>Galleria.run('.galleria');</code></pre>
+        
+        <h2 id="gallery3">Light</h2>
+        <p>Light version, horizontal carousel.</p>
+        <div id="galleria3"></div>
+<pre><code>Galleria.run('.galleria', {
+    variation: 'light'
+});</code></pre>
+        
+        <h2 id="gallery4">Vertical, light</h2>
+        <p>Vertical carousel, light version.</p>
+        <div id="galleria4"></div>
+<pre><code>Galleria.run('.galleria', {
+    carousel: 'vertical',
+    variation: 'light'
+});</code></pre>
+
+        <div id="data">
+            <a href="https://picsum.photos/id/389/1024/768.jpg">
+                <img src="https://picsum.photos/id/389/150/100.jpg"
+                     data-big="https://picsum.photos/id/389/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/bt-Sc22W-BE&quot;&gt;Jake Hills&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Footsteps">
+            </a>
+            <a href="https://picsum.photos/id/675/768/1024.jpg">
+                <img src="https://picsum.photos/id/675/100/150.jpg"
+                     data-big="https://picsum.photos/id/675/1080/1440.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Waves washes on beach shore">
+            </a>
+            <a href="https://picsum.photos/id/525/1024/350.jpg">
+                <img src="https://picsum.photos/id/525/150/50.jpg"
+                     data-big="https://picsum.photos/id/525/1440/500.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/aViOQZzikVs&quot;&gt;Luca Zanon&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Extreme Desert Hike">
+            </a>
+            <a href="https://picsum.photos/id/349/1024/768.jpg">
+                <img src="https://picsum.photos/id/349/150/100.jpg"
+                     data-big="https://picsum.photos/id/349/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/FmMivfgHCiM&quot;&gt;Caleb George&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Man in front of skyline">
+            </a>
+            <a href="https://picsum.photos/id/120/1024/768.jpg">
+                <img src="https://picsum.photos/id/120/150/100.jpg"
+                     data-big="https://picsum.photos/id/120/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/_DA3D5P71qs&quot;&gt;Guillaume&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Milky Way Night Sky">
+            </a>
+            <a href="https://picsum.photos/id/299/1024/768.jpg">
+                <img src="https://picsum.photos/id/299/150/100.jpg"
+                     data-big="https://picsum.photos/id/299/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/nOhUx3tiaQQ&quot;&gt;Matthew Wiebe&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="My favorite building in the city">
+            </a>
+            <a href="https://picsum.photos/id/219/1024/768.jpg">
+                <img src="https://picsum.photos/id/219/150/100.jpg"
+                     data-big="https://picsum.photos/id/219/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/7iB4OZDlRok&quot;&gt;Martyn Seddon&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Encounter with a leopard">
+            </a>
+            <a href="https://picsum.photos/id/856/1024/768.jpg">
+                <img src="https://picsum.photos/id/856/150/100.jpg"
+                     data-big="https://picsum.photos/id/856/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/omKdUQ9R3Zo&quot;&gt;Olu Eletu&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Elegant man with hot coffee">
+            </a>
+            <a href="https://picsum.photos/id/531/1024/768.jpg">
+                <img src="https://picsum.photos/id/531/150/100.jpg"
+                     data-big="https://picsum.photos/id/531/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/zr8msYQhfRg&quot;&gt;Jeff Sheldon&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Vintage cameras">
+            </a>
+            <a href="https://picsum.photos/id/426/1024/768.jpg">
+                <img src="https://picsum.photos/id/426/150/100.jpg"
+                     data-big="https://picsum.photos/id/426/1440/1080.jpg"
+                     data-description="by &lt;a href=&quot;https://unsplash.com/photos/01ZeHnK3F_4&quot;&gt;Ales Krivec&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+                     data-title="Valley town">
+            </a>
+            <a href="https://vimeo.com/25750735">
+                <span class="video">Works for vimeo too.</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=PEEXZZ071FE">
+                <span class="video">Works for youtube too.</span>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="classic.html">Classic Theme</a>
+    </footer>
+
+
+    <script>
+    $(function() {
+        // Load the Azur theme
+        Galleria.loadTheme('themes/azur/galleria.azur.js');
+
+        // Initialize Galleria
+        Galleria.run('#galleria1', {
+            dataSource: '#data',
+            carousel: 'vertical'
+        });
+        Galleria.run('#galleria2', {
+            dataSource: '#data'
+        });
+        Galleria.run('#galleria3', {
+            dataSource: '#data',
+            variation: 'light'
+        });
+        Galleria.run('#galleria4', {
+            dataSource: '#data',
+            carousel: 'vertical',
+            variation: 'light'
+        });
+        
+        $( "nav a" ).click(function( event ) {
+            $(this).addClass('active').siblings().removeClass('active');
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 57 }, 700);
+        });
+    });
+    </script>
+    </body>
+</html>
