@@ -4,42 +4,32 @@ Galleria
 
 **Responsive JavaScript Image Gallery**
 
-This is the open source repository for the Galleria core, themes, plugins and everything else.
-Feel free to post issues - but keep them code related please. You may also do pull requests, but make sure you include some comments and/or tests.
+This is fork adds **vertical carousel** to the GalleriaJS Image Gallery. Core script is full compatibile with all themes.
 
-Info, demos, docs and everything else: https://galleriajs.github.io/
+Themes **Classic** and **Azur** were upgraded to include this new feature. Classic theme has also ``light`` variant as option now.
 
-FAQ
+.. image:: https://sammik.github.io/galleria/classic.png
+
+Showcase
 =============
 
-https://galleriajs.github.io//docs/references/faq.html
+See it in action: https://sammik.github.io/galleria/
 
-
-Installation
+Usage
 ============
 
-npm
+In options, set ``carousel: 'vertical'``.
+::
+    Galleria.run('.galleria', {
+        carousel: 'vertical'
+    });
+
+Origin
+=============
+
+Original, info, demos, docs and everything else: https://galleriajs.github.io/
+
+FAQ
 ---
-::
 
-	$ npm install galleria
-
-https://www.npmjs.com/package/galleria
-
-
-bower
------
-::
-
-	$ bower install galleria
-
-https://bower.io/search/?q=galleria
-
-
-CDN
----
-::
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
-
-https://cdnjs.com/libraries/galleria
+https://galleriajs.github.io/docs/references/faq.html
